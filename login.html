@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICON 2023 - Welcome</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="user signinBx">
+            <div class="imgBx"><img src="./assets/images/icon_logo.png" alt="" /></div>
+            <div class="formBx">
+              <form action="" onsubmit="handleUserLogin(this)">
+                <h2>Login in</h2>
+                <input type="text" name="" placeholder="Email" id="login-email"/>
+                <input type="password" name="" placeholder="Password" id="login-pwd"/>
+                <input type="submit" name="" value="Login" id="submit-login"/>
+                <p class="signup">
+                  Don't have an account ?
+                  <a href="#" onclick="toggleForm();" id="register-btn">Register.</a>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="user signupBx">
+            <div class="formBx">
+              <form action="" onsubmit="handleUserRegister(this)">
+                <h2>Register</h2>
+                <input type="email" name="" placeholder="Email Address" id="register-email"/>
+                <input type="password" name="" placeholder="Create Password" id="register-pwd"/>
+                <input type="password" name="" placeholder="Confirm Password" id="register-cpwd"/>
+                <input type="submit" name="" value="Sign Up" />
+                <p class="signup">
+                  Already have an account ?
+                  <a href="#" onclick="toggleForm();">Login in.</a>
+                </p>
+              </form>
+            </div>
+            <div class="imgBx"><img src="./assets/images/icon_logo.png" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <script src="./assets/js/clientConfig.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./assets/js/login.js"></script>
+</body>
+</html>
