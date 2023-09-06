@@ -264,20 +264,8 @@ function handleUserLogin(type) {
 }
 
 
-const popup = document.getElementById("popup");
-const closeBtn = document.getElementById("closeBtn");
-function openPopup(){
-  // alert('open form')
-   popup.style.display = '';
-}
-closeBtn.addEventListener('click', ()=>{
-  popup.style.display = 'none';
-});
-popup.addEventListener('click', ()=>{
-  popup.style.display = 'none';
-});
-
 function redirectToEventForm(){
   // alert('click')
+  // first check user is logged or not
   window.location = eventRegisterUrl;
 }
